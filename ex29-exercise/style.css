@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* background-color: rgb(236, 236, 236); */
+}
+body{
+    background-color: rgb(236, 236, 236);;
+}
+.container{
+    position: relative;
+    top:20px;
+    left: 35vw;
+    background-color: white;
+    border: 2px solid rgb(198, 196, 196);
+    width: 25vw;
+    height: 82vh;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 1px 1px 5px 5px rgb(195, 195, 195);
+}
+img{
+    width: 100%;
+    height:40vh;
+    border-radius: 10px;
+    margin-bottom: 5%;
+}
+
+.tag{
+    background-color: white;
+    border: 2px solid rgb(198, 196, 196);
+    border-radius: 10px;
+    padding: 3px 10px;
+    color: rgb(134, 132, 132);
+    margin-left: 10px;
+    font-weight: 900;
+}
+
+.container>h2{
+    font-weight: 1000;
+    font-family: cosmic 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    color: rgb(64, 63, 63);
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.container>div>p{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 25px;
+    line-height: 30px;
+    font-weight: 700;
+    color: rgb(133, 131, 131);
+}
+
+.read{
+    color: rgb(81, 136, 239);
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 0px;
+    background-color: rgb(198, 213, 236);
+    font-weight: 900;
+    font-size: 10px;
+    position: relative;
+    left: 35%;
+    top: 2vh;
+}
