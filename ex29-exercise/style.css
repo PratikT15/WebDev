@@ -13,7 +13,7 @@ body{
     background-color: white;
     border: 2px solid rgb(198, 196, 196);
     width: 25vw;
-    height: 82vh;
+    min-height: 82vh;
     border-radius: 10px;
     padding: 10px;
     box-shadow: 1px 1px 5px 5px rgb(195, 195, 195);
@@ -50,6 +50,7 @@ img{
     line-height: 30px;
     font-weight: 700;
     color: rgb(133, 131, 131);
+    text-overflow: ellipsis;
 }
 
 .read{
