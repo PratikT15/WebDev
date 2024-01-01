@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity in CSS</title>
+    <style>
+        /* The specificity of element selector is 1  */
+        h1 {
+            color: aqua;
+        }
+
+        /* The specificity of class selector using element is 10+1=11  */
+        h1.yellow {
+            color: yellow;
+        }
+
+        /* The specificity of class selector is 10  */
+        .cred {
+            color: red;
+        }
+
+        /* The specificity of attribute selector is 10  */
+        [data-x="a"]{
+            color: maroon;
+        }
+
+        /* The specificity of class selector is 10  */
+        .cpurple {
+            color: purple;
+        }
+
+        /* The specificity of this selector is 1+10+10+10+10=41 */
+        a.class1.class2[href]:hover{
+            color:red;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 class="yellow cred cpurple" data-x="a">CSS Specificity</h1>
+        <a class="class1 class2" href="https://www.google.com">Google</a>
+    </div>
+</body>
+
+</html>
