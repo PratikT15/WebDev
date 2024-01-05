@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - Pratik Thite</title>
+    <style>
+        main{
+            min-height: 100vh;
+        }
+
+        footer{
+            text-align: center;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        :root{
+            --red:rgb(241, 203, 203);
+            --blue:blue;
+            --green:green;
+            --purple:rgb(89, 74, 190);
+            --light_grey:rgb(227, 227, 227);
+        }
+
+        .nav{
+            background-color: var(--purple);
+            width: 100vw;
+            height: 8vh;
+            position: fixed;
+            top: 0px;
+        }
+        ul{
+            display: flex;
+            list-style: none;
+        }
+
+        .nav ul li{
+            margin: 20px 70px;
+        }
+        #search{
+            margin-left: 40vw;
+            padding: 5px 30px;
+            text-align: center;
+            border-radius: 10px;
+            border: none;
+        }
+
+        #search:hover{
+            box-shadow: 0px 0px 10px black;
+            box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 25px;
+            padding: 8px 35px;
+            margin-top: -5px;
+        }
+        #search:focus
+        {
+            background-color: var(--light_grey);
+            padding: 8px 35px;
+            margin-top: -5px;
+            
+        }
+        
+        .items{
+            color: aliceblue;
+            font-size: large;   
+            position: relative;
+        }
+
+        .items:hover{
+            
+            text-shadow: 2px 2px 10px black;
+            text-decoration: underline;
+            top:-5px;
+            margin-left: 65px;
+            font-size: 20px;
+            
+            cursor: pointer;
+            /* border-radius: 10px;
+            box-shadow: inset 0px 0px 10px rgb(58, 57, 57); */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <nav>
+                <ul>
+                    <li class="items">Home</li>
+                    <li class="items">About</li>
+                    <li class="items">Contact</li>
+                    <li ><input id="search" type="search" placeholder="Search Anything here..."></textarea></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+    </main>
+
+    <footer>
+        <div>
+            &copy;  Pratik Thite | All contents are reserved
+        </div>
+    </footer>
+</body>
+</html>

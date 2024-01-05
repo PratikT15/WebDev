@@ -35,6 +35,9 @@ img{
     font-weight: 900;
 }
 
+.tag:hover{
+    cursor: pointer;
+}
 .container>h2{
     font-weight: 1000;
     font-family: cosmic 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -64,4 +67,8 @@ img{
     position: relative;
     left: 35%;
     top: 2vh;
+}
+
+.read:hover{
+    cursor: pointer;
 }
