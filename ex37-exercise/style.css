@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap');
 :root{
-    --navcolor:rgb(17, 82, 179);
+    --navcolor:rgb(31, 31, 31);
     --itemcolor:white;
 }
 
@@ -11,7 +11,8 @@
 
 .nav{
     background-color: var(--navcolor);
-    padding: 20px;
+    padding: 10px;
+    min-height: auto;
     overflow-x: auto;
     position: sticky;
     top: 0px;
@@ -24,7 +25,19 @@
 .items{
     margin-left: 8vw;
     color: var(--itemcolor);
-    font-size: 20px;
+    font-size: 4vw;
+    text-shadow: 1px 1px 5px rgb(0, 0, 0),0 0 1em rgb(255, 255, 255);
+    /* animation: myanim; */
+
+    /* @keyframes myanim{
+        50%
+    } */
+
+}
+
+.nav .list li:hover{
+    cursor: pointer;
+   
 }
 
 .nav .list li:first-child div{
@@ -33,13 +46,23 @@
     margin: 3px;
 }
 
+.nav .list li:nth-last-child(1)
+{
+     margin-left: 30vw;
+}
 #search{
-    margin-left: 25vw;
+   
     height: 4vh;
-    width: 15vw;
+    min-width: 15vw;
     border: none;
-    border-radius: 5px;
+    border-radius: 15px;
     text-align: center;
+    box-shadow: 0px  4px 10px rgb(20, 20, 20);
+}
+
+#search:hover{
+    outline:2px solid rgb(0, 0, 0);
+    background-color: rgb(244, 240, 240);
 }
 
 .box{
@@ -47,6 +70,7 @@
     display: flex;
     background-color: beige;
     min-height: 90vh;
+    width: 100vw;
 }
 
 .boxes{
@@ -72,20 +96,32 @@
 
 .logo{
     position: fixed;
-    top:88vh;
-    left: 93vw;
+    top:85vh;
+    left: 92vw;
+    background-color: white;
+    border-radius: 60px;
+    box-shadow: 0px 5px 15px black;
 }
 
 .logo img{
-    border-radius: 50px;
+    border-radius: 60px;
 }
 
 .footer{
     margin: auto;
-    margin-top: 50px;
+    margin-top: 60px;
     text-align: center;
 }
 
 .footer p{
     font-size: 12px;
 }
+
+/* .sidebar{
+    height:100vh;
+    width: 10vw;;
+    background-color: black;
+    position: sticky;
+    margin-left: 90vw;;
+    top:0;
+} */

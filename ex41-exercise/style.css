@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+.list{
+    display: flex;
+    list-style: none;
+    /* background-color: aqua; */
+    padding: 15px; 
+    min-width: 80vw;    
+    column-gap: 40px;
+    overflow-x: auto;
+    align-items: center;
+}
+
+.item{
+    /* font-weight: 800; */
+    font-size: 17px;
+    color: rgb(43, 42, 42);
+}
+
+.item:nth-child(2)
+{
+    /* background-color: green; */
+    margin-left: 38vw;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: aqua; */
+    width: 60vw;
+    align-self: center;
+
+}
+
+.content p:nth-child(2){
+    font-size: 23px;
+    margin-top: 40px;
+    text-align: center;
+}
+.row{
+    display: flex;
+    margin-top: 50px;
+    column-gap: 20px;
+    align-items: center;
+}
+
+.row h1{
+    font-weight: 400;
+    font-size: 50px;
+}
+
+.ver{
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    /* background-color: aqua; */
+    margin-top: 100px;
+}
+
+.ver p:nth-child(2){
+    align-self: center;
+    margin-bottom: 40px;
+}
+.ver p:nth-child(3){
+    font-size: 14px;
+}
+#download{
+    margin-top: 30px;
+    background-color: #00b6d1;
+    padding: 15px 20px;
+    color: white;
+    font-weight: 900;
+    border: none;
+    border-radius: 5px;
+}
+
+#download:hover{
+    cursor: pointer;
+    background-color: #025d6b;
+}
+
+.lang{
+    background-color: rgb(248, 248, 248);
+    width: 18vw;
+    height: 10vw;
+    margin: 30px;
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lang h3{
+    margin-top: 20px;
+}
+
+.lang small{
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.boxes{
+    /* background-color: #00b6d1; */
+    display: grid;
+    grid-template-columns: repeat(3,18vw);
+    grid-template-rows: repeat(4,12svw);
+    column-gap: 40px;
+    width: 70vw;
+    justify-content: center;
+}
+
+.lang .down{
+    display: flex;
+    margin-top: 40px;
+}
+.boxes .lang:first-child .down{
+    margin-top: 65px;
+}
+
+.down_b{
+    background-color: #00b6d1;
+    padding: 10px ;
+}
