@@ -127,13 +127,23 @@ body{
 
 .lang .down{
     display: flex;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 .boxes .lang:first-child .down{
-    margin-top: 65px;
+    margin-top: 55px;
 }
 
 .down_b{
     background-color: #00b6d1;
     padding: 10px ;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    column-gap: 10px;
+    margin: 5px;
+}
+
+.down .bit64{
+    background-color: #5cb85c;
 }
