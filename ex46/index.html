@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <style>
+        .container{
+            background-color: rgb(9, 106, 106);
+            height: 80vh;
+            width: 30vw;
+        }
+
+        .box{
+            
+            height: 45px;
+            width: 34px;
+            /* animation: pratikanimation;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function: cubic-bezier(0.02, 0.01, 0, 1.03);
+            animation-delay: 1s;
+            animation-direction: alternate-reverse; */
+
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: pratikanimation 3s ease-in-out 3s infinite alternate,newanim 3s ease-in-out 3s infinite alternate;
+        }
+
+        @keyframes pratikanimation {
+            from{
+                background-color: white;
+                color: black;
+            }
+            to{
+                transform: translateX(1000px);
+                background-color: black;
+                color: white;
+            }
+        }
+
+        @keyframes newanim {
+            0%{
+                transform: rotate(45deg);
+            }            
+            15%{
+                transform: rotate(90deg);
+            }            
+            20%{
+                transform: rotate(135deg);
+            }            
+            30%{
+                transform: rotate(180deg);
+            }            
+            50%{
+                transform: rotate(225deg);
+            }            
+            60%{
+                transform: rotate(270deg);
+            }            
+            80%{
+                transform: rotate(315deg);
+            }            
+            100%{
+                transform: rotate(360deg);
+            }            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            box
+        </div>
+    </div>
+</body>
+</html>
